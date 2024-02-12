@@ -1,0 +1,167 @@
+<!-- about.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <style>
+        /* Общие стили */
+
+        html {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        }
+
+body {
+    background-color: #2d2d2d;
+    color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Используйте space-between для размещения элементов по разным сторонам */
+    align-items: center; /* Чтобы элементы выравнивались по вертикали */
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Пример для изображения */
+header img {
+    width: 400px; /* Установите ширину изображения по вашему выбору */
+}
+
+        nav {
+            background-color: #262626;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Общие стили для ссылок в навигационном меню */
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 22px;
+}
+
+/* Псевдоэлементы для создания анимации при наведении */
+nav a::before,
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Эффект при наведении */
+nav a:hover::before,
+nav a:hover::after {
+    background-color: #e44d87; /* Цвет при наведении */
+    transform: scaleX(1);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+/* Отступы для параграфов */
+.conteiner {
+            background-color: #2d2d2d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner {
+            background-image: url('images/fon2.jpg'); /* Замените 'background_image.jpg' на путь к вашему изображению */
+            background-size: cover;
+            background-position: center;
+            height: 800px; /* Высота баннера */
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #banner h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        #banner p {
+            font-size: 1.4em;
+            margin: 5px 0;
+            width: 50%;
+            color: #fff;
+        }
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Логотип сайта" width="400"  >
+        <p>Электронный адрес разработчика: developer@example.com</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <main>
+        <h1>Немного о нашей компании</h1>
+        <div class="conteiner">
+        <div id="banner">
+        <h1>Чердынь</h1>
+        <p>Ваш уединенный уголок в горах</p>
+        <p>Добро пожаловать в "Чердынь" – ваш личный оазис в объятиях гор. Мы предлагаем уникальные домики, расположенные в самых живописных уголках горных хребтов, где каждое утро начинается с вдохновляющего видеозрения на вершины, окутанные туманом.
+        <h1>Наши особенности:</h1>
+        <p>Изысканный Комфорт: Наши домики оборудованы всем необходимым для приятного и уютного пребывания. Камин, панорамные окна, просторные террасы – все для вашего комфорта.
+        <p>Невероятные Пейзажи: Откройте для себя красоту окружающей природы. Вид на горные вершины, леса и голубое небо – каждый день вас ждет новое вдохновение.
+        <p>Экологическая Сознательность: Мы заботимся о природе. Наши домики сочетают в себе современные технологии с энергоэффективностью и экологической безопасностью.
+        <p>Поддержка 24/7: Наша команда готова предоставить вам любую необходимую поддержку в течение вашего пребывания. Ваш комфорт – наш приоритет.
+        <p>Откройте для себя чарующий мир гор с нами. Здесь, в высокогорном раю, ваш отдых станет незабвенным приключением.
+        <p>Позвольте себе роскошь настоящего покоя в объятиях природы.
+    </div>
+    </div>
+
+
+    </main>
+<img src="about_image.jpg" alt="Пример изображения о нас" width="300">
+    <footer>
+        &copy; 2024 Чердынь. Все права защищены.
+    </footer>
+
+</body>
+</html>

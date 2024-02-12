@@ -1,0 +1,193 @@
+<!-- services.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <style>
+               /* Общие стили */
+
+               html {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        }
+
+body {
+    background-color: #2d2d2d;
+    color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Используйте space-between для размещения элементов по разным сторонам */
+    align-items: center; /* Чтобы элементы выравнивались по вертикали */
+    background-color: #1a1a1a;
+    color: #fff;
+    
+}
+
+/* Пример для изображения */
+header img {
+    width: 400px; /* Установите ширину изображения по вашему выбору */
+}
+
+
+        nav {
+            background-color: #262626;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Общие стили для ссылок в навигационном меню */
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 22px;
+}
+
+/* Псевдоэлементы для создания анимации при наведении */
+nav a::before,
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Эффект при наведении */
+nav a:hover::before,
+nav a:hover::after {
+    background-color: #e44d87; /* Цвет при наведении */
+    transform: scaleX(1);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+/* Отступы для параграфов */
+p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .service {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Логотип сайта" width="400"  >
+        <p>Электронный адрес разработчика: developer@example.com</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <main>
+        <h1>Наши услуги</h1>
+        <div class="service">
+        <img src="images/s1.webp" alt="Услуга 1">
+        <div>
+        <h2>Сдача котеджей</h2>
+        <p>Добро пожаловать в мир изысканных коттеджей, где роскошь сочетается с уютом. Наши коттеджи предоставляют уникальные пространства для тех, кто ценит высший уровень комфорта и желает окунуться в атмосферу роскоши.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/s2.webp" alt="Услуга 2">
+        <div>
+        <h2>Экскурии</h2>
+        <p>Отправьтесь в захватывающее приключение с нашими увлекательными экскурсиями! Мы предлагаем уникальную возможность исследовать невероятные места и открывать для себя их тайны. Выберите нашу услугу экскурсий, чтобы погрузиться в уникальную атмосферу каждого места, окунуться в его историю и насладиться неповторимыми видами.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/s3.webp" alt="Услуга 3">
+        <div>
+        <h2>Джипинг</h2>
+        <p>Джипинг – это захватывающее приключение в мире природы и скрытых тропических уголков. Наши эксклюзивные джип-туры предоставляют возможность по-настоящему ощутить дух свободы, покоряя отдаленные районы на мощных внедорожниках.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/s4.webp" alt="Услуга 4">
+        <div>
+        <h2>Снежная трасса</h2>
+        <p>Наши снежные трассы для лыж, сноубордов и ватрушек. Откройте для себя уникальный мир альпийского веселья вместе с нашими снежными трассами. Наши лыжные склоны предоставляют идеальные условия для всех уровней подготовки - от начинающих до опытных райдеров. Наши снежные трассы - это не только зимнее развлечение, но и возможность насладиться красотой природы в уютной атмосфере гор. Здесь каждый может найти что-то для себя и создать свои незабвенные моменты на снегу. Приглашаем вас в мир "Снежные впечатления"!</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/s5.webp" alt="Услуга 5">
+        <div>
+        <h2>Конная прогулка</h2>
+        <p>Конные прогулки - это уникальная возможность совместить природную красоту с увлекательным приключением на лошади. В нашем сервисе мы предлагаем вам возможность окунуться в мир конного спорта и насладиться неповторимым опытом. </p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/s6.webp" alt="Услуга 6">
+        <div>
+        <h2>Прокат квадроциклов</h2>
+        <p>Почувствуйте ветер свободы и захватывающие приключения с нашей услугой проката квадроциклов! Идеальное сочетание адреналина и природы ожидает вас. Исследуйте окружающие природные тропы, преодолевайте пересеченные местности и наслаждайтесь свободой передвижения на мощных квадроциклах. С нашим разнообразным парком транспортных средств вы сможете выбрать квадроцикл, соответствующий вашему уровню опыта и предпочтениям. Наши профессиональные инструкторы всегда готовы предоставить вам обучение и поддержку, чтобы сделать ваше приключение максимально комфортным и безопасным. Погрузитесь в мир природы, ощутите адреналин и создайте яркие воспоминания с услугой проката квадроциклов от нашей компании!</p>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Чердынь. Все права защищены.
+    </footer>
+
+</body>
+</html>

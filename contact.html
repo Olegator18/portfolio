@@ -1,0 +1,194 @@
+<!-- contact.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+              /* Общие стили */
+
+              html {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        }
+body {
+    background-color: #2d2d2d;
+    color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Используйте space-between для размещения элементов по разным сторонам */
+    align-items: center; /* Чтобы элементы выравнивались по вертикали */
+    background-color: #1a1a1a;
+    color: #fff;
+    
+}
+
+/* Пример для изображения */
+header img {
+    width: 400px; /* Установите ширину изображения по вашему выбору */
+}
+
+        nav {
+            background-color: #262626;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Общие стили для ссылок в навигационном меню */
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 22px;
+}
+
+/* Псевдоэлементы для создания анимации при наведении */
+nav a::before,
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Эффект при наведении */
+nav a:hover::before,
+nav a:hover::after {
+    background-color: #e44d87; /* Цвет при наведении */
+    transform: scaleX(1);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/* Отступы для параграфов */
+p {
+    margin-bottom: 15px;
+}
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+  }  
+
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 70px;
+    margin: 20px;
+    padding: 15px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #555;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+.image-slider img {
+    width: 70%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider img:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    height: 100%;
+}
+
+.product-card:hover .image-slider img {
+    transform: translateX(0%);
+    height: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Логотип сайта" width="400"  >
+        <p>Электронный адрес разработчика: developer@example.com</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <main>
+        <h1>Наши контакты</h1>
+        <h2>Свяжитесь с нами, чтобы получить дополнительную информацию:</h2>
+        <a href="404.html" class="product-cards">
+        <div class="product-card">
+            <div class="image-slider">
+                <img src="images/tel.png" alt="Product 1">
+                <!-- Добавьте дополнительные изображения для слайдера -->
+            </div>
+            <h2>+7(999)123 12 23</h2>
+        </div>
+
+        <div class="product-card">
+            <div class="image-slider">
+                <img src="images/map.png" alt="Product 2">
+
+                <!-- Добавьте дополнительные изображения для слайдера -->
+            </div>
+            <h2>ул. Горная 23</h2>
+        </div>
+
+        <div class="product-card">
+            <div class="image-slider">
+                <img src="images/mail.png" alt="Product 2">
+                <!-- Добавьте дополнительные изображения для слайдера -->
+            </div>
+            <h2>developer@example.com</h2>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Чердынь. Все права защищены.
+    </footer>
+
+</body>
+</html>
